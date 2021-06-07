@@ -1,0 +1,13 @@
+<table *ngIf="listFormation" class="table"><!--on cree un tableau ssi il y'a des formations dans la base de donnee-->
+            <tr>
+                <th>ID</th><th>Nom</th><th>Duree</th>
+            </tr>
+            <tr *ngFor="let f of listFormation._embedded.formations"> <!--creation d'une boucle en fonction de la taille des formations-->
+
+                <td>{{f.id}}</td>
+                 <td>{{f.nom}}</td>
+                 <td>{{f.duree}}</td>
+
+
+             </tr>
+        </table>

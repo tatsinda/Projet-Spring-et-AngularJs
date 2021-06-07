@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+    <body>
+        
+
+
+        <div class="container" *ngIf="listFormations"><!--on cette balise ssi il y'a des formations dans la base de donnee-->
+            <div class="panel panel-primary"> <!--on cree un panel avec la couleur bleur-->
+                <div class="panel-heading">Liste des etudiants</div> <!--on entre la l'entete du panel-->
+                <div class="panel-body"><!--on entre la le corps  du panel-->
+                    <span *ngFor="let f of listFormations._embedded.formations"> <!--creation d'une boucle en fonction de la taille des formations-->
+
+                        <button class="btn btn-primary ">{{f.nom}}</button><!--on cree un boutton de couleur fond bleur -->
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+
+
+   
+
+
+
+
+
+       
+        
+        
+
+        
+      <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </body>
+</html>

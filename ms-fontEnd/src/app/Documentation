@@ -1,0 +1,18 @@
+
+-creation d'un composant web: etudiants
+-dans le fichier e.c.ts on modifie le selector
+-dans le fichier app.c.html on appelle le composant
+
+
+**********envoi de la requette http vers la partie serveur******
+-dans le fichier app.module on importe des module
+-fichier e.c.ts
+-file e.c.html creations d'un tableau pour afficher les formations
+ -puis test
+ -dans le projet code serveur,fichier FormationRepository on autorise l'accession a l'api depuis in domaine exterme 
+ -on test
+ -on install bootstrap v3.3.7 dans l'app
+ -dans le dossier Node_module du projet on verifie si bootstrap est present
+ -dans le fichier angular.json on ajoute le fichier bootstrta.css au niveau d "style"
+ -file e.c.html on ajoule la class table dans la balise table
+ -redemarrer le serveur et on test
